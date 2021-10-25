@@ -3,21 +3,22 @@ package _10m._21d_17;
 import java.util.Scanner;
 
 public class DomaciUkol {
-    /***
-     * Každý sem napište metodu třídy dle zadání
-     */
+/***
+ * Každý sem napište metodu třídy dle zadání
+ */
     //OK Fiala
     //public static int obsahObdelnika(int stranaA, int stranaB)
     public static int obsahObdelnika(int stranaA, int stranaB){
         return stranaA * stranaB;
     }
 
-    /**
-     Hoffman
-     public static int obsahPravouhlehoTrojuhelnika(int odvesnaA, int odvesnaB)
-     Hojný
-     public static int obvodObdelnika(int stranaA, int stranaB)
-     */
+/**
+    Hoffman
+    public static int obsahPravouhlehoTrojuhelnika(int odvesnaA, int odvesnaB)
+
+    Hojný
+    public static int obvodObdelnika(int stranaA, int stranaB)
+*/
     //OK Hudeček
     //public static int obvodPravouhlehoTrojuhelnika(int odvesnaA, int odvesnaB)
     public static int obvodPravouhlehoTrojuhelnika(int odvesnaA, int odvesnaB){
@@ -27,23 +28,35 @@ public class DomaciUkol {
         return obvodInt;
 
     }
-    /*
-        Jiránek
-        public static double objemKoule(double polomer)
-        Kolář
-        public static double obsahKruhu(double polomer)
-        Novák A.
-        public static double obvodKruhu(double polomer)
-        OK Novák Š.
-        public static int povrchKrychle(int hranaA)*/
+
+    //Jiránek
+    public static double objemKoule(double polomer){
+        return(4/3 * 3.14 * (polomer*polomer*polomer));
+    }
+/*
+    Kolář
+    public static double obsahKruhu(double polomer)*/
+  public static double obsahKruhu(double polomer) {
+      return (Math.PI*Math.pow(polomer,2));
+  }
+/*
+    Novák A.
+    public static double obvodKruhu(double polomer)
+*/
+    public static double obvodKruhu(double polomer){
+        double pi = 3.1415926536;
+        return 2 * pi * polomer;
+    }
+ /*   OK Novák Š.
+    public static int povrchKrychle(int hranaA)*/
     public static int povrchkrychle(int a){
-        return 6 * a *a;
+     return 6 * a *a;
     }
     //OK Odstrčil
     //public static int objemKrychle(int hranaA)
-    public static int objemKrychle(int hranaA){
+     public static int objemKrychle(int hranaA){
         return hranaA*hranaA*hranaA;
-    }
+     }
     //OK Pelikán
     //může si vybrat svou úlohu
     public static void printBoard(int sizeX, int sizeY) {
@@ -57,7 +70,7 @@ public class DomaciUkol {
 
     //OK Rosenbaum
     //public static long faktorial(byte n)
-    public static long faktorial(long n) {
+    public static long faktorial(byte n) {
         //if (n == 0) return 1; zbytečné
         long result = 1;
         for (int i = 1; i <= n; i++) {
@@ -79,8 +92,11 @@ public class DomaciUkol {
         else return fibonacci(n-2)+fibonacci(n-1);
     }
     /**
-     Vítek
-     public static double povrchKoule(double polomer)
-     ***/
+    Vítek
+    public static double povrchKoule(double polomer)
+ ***/
+    public static double povrchKoule(double pU) {
+        return (4.00*Math.PI)*Math.pow(pU,2);
+    }
 
 }
