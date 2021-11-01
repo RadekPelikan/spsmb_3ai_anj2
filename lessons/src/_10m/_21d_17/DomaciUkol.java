@@ -70,7 +70,7 @@ public class DomaciUkol {
 
     //OK Rosenbaum
     //public static long faktorial(byte n)
-    public static long faktorial(byte n) {
+    public static long faktorial(long n) {
         //if (n == 0) return 1; zbytečné
         long result = 1;
         for (int i = 1; i <= n; i++) {
