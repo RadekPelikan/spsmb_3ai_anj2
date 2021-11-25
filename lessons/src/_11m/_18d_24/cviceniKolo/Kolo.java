@@ -31,11 +31,11 @@ public class Kolo {
         return vyrobce;
     }
 
-
     public String coJsiZac() {
-        return "JednostopeVozidlo{" +
+        return "Kolo{" +
+                "cena=" + cena +
+                ", maPrehazovacku=" + maPrehazovacku +
                 ", vyrobce='" + vyrobce + '\'' +
-                ", cena=" + cena +
                 '}';
     }
 }

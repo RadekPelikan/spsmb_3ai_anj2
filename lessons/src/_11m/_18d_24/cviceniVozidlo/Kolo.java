@@ -15,4 +15,14 @@ public class Kolo extends JednostopeVozidlo {
     public void setKvalitaSedatka(int kvalitaSedatka) {
         this.kvalitaSedatka = kvalitaSedatka >= 0 && kvalitaSedatka <= 10 ? kvalitaSedatka : this.kvalitaSedatka;
     }
+
+    @Override
+    public String coJsiZac() {
+        return "Kolo{" +
+                "druh='" + druh + '\'' +
+                ", vyrobce='" + vyrobce + '\'' +
+                ", cena=" + cena +
+                ", kvalitaSedatka=" + kvalitaSedatka +
+                '}';
+    }
 }

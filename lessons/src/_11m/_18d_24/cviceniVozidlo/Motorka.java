@@ -11,4 +11,14 @@ public class Motorka extends JednostopeVozidlo {
     public double getObjemNadrze() {
         return objemNadrze;
     }
+
+    @Override
+    public String coJsiZac() {
+        return "Motorka{" +
+                "druh='" + druh + '\'' +
+                ", vyrobce='" + vyrobce + '\'' +
+                ", cena=" + cena +
+                ", objemNadrze=" + objemNadrze +
+                '}';
+    }
 }

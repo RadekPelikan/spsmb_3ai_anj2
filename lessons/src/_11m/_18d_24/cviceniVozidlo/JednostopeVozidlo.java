@@ -9,21 +9,15 @@ package _11m._18d_24.cviceniVozidlo;
 // vypisovala i počty převodů.
 
 public abstract class JednostopeVozidlo {
-    private String druh;
-    private String vyrobce;
-    private int cena;
+    protected String druh;
+    protected String vyrobce;
+    protected int cena;
 
-    public JednostopeVozidlo(String druh, String vyrobce, int cena) {
+    protected JednostopeVozidlo(String druh, String vyrobce, int cena) {
         this.druh = druh;
         this.vyrobce = vyrobce;
         this.cena = cena;
     }
 
-    public String coJsiZac() {
-        return "JednostopeVozidlo{" +
-                "druh='" + druh + '\'' +
-                ", vyrobce='" + vyrobce + '\'' +
-                ", cena=" + cena +
-                '}';
-    }
+    protected abstract String coJsiZac();
 }

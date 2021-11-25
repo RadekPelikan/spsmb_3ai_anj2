@@ -22,7 +22,9 @@ public class HorskeKolo extends Kolo {
     @Override
     public String coJsiZac() {
         return "HorskeKolo{" +
-                "prevodyVzadu=" + prevodyVzadu +
+                "cena=" + getCena() +
+                ", vyrobce='" + getVyrobce() + '\'' +
+                ", prevodyVzadu=" + prevodyVzadu +
                 ", prevodyVpredu=" + prevodyVpredu +
                 '}';
     }
