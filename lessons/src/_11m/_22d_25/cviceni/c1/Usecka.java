@@ -12,4 +12,9 @@ public class Usecka {
             System.out.print("*");
         }
     }
+
+    public static void main(String[] args) {
+        Ctverec a = new Ctverec(5);
+        a.zobraz();
+    }
 }
