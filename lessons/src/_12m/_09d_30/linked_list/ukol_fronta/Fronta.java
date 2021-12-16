@@ -3,7 +3,6 @@ package _12m._09d_30.linked_list.ukol_fronta;
 import _12m._09d_30.linked_list.Zasobnik;
 
 import java.util.LinkedList;
-import java.util.Queue;
 
 //Domácí úkol do 16.12.:
 //použijte LinkedList pro implementaci abstraktního datového typu fronta

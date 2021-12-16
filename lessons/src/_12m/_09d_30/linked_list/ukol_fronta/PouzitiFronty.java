@@ -1,9 +1,5 @@
 package _12m._09d_30.linked_list.ukol_fronta;
 
-import _12m._09d_30.linked_list.Zasobnik;
-
-import java.util.Queue;
-
 public class PouzitiFronty {
     public static void main(String[] args) {
         Fronta<String> fs = new Fronta<>();
