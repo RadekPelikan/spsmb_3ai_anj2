@@ -8,15 +8,19 @@ import java.util.LinkedList;
 //- implemntace abstraktního datového typu fronta (queue - FIFO)
 public class Zasobnik<E> {
     private LinkedList<E> stack = new LinkedList<E>();
-    public void add (E elem){
+
+    public void add(E elem) {
         stack.addFirst(elem);
     }
+
     public E remove() {
         return stack.removeFirst();
     }
+
     public E get() {
         return stack.getFirst();
     }
+
     public boolean isEmpty() {
         return stack.isEmpty();
     }
